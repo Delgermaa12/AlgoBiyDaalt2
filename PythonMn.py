@@ -2,32 +2,15 @@ import pyphen
 import math
 import time
 
-# -----------------------
-# HYPHENATOR USING PYPHEN
-# -----------------------
-class SimpleHyphenator:
+class Mongol1:
     def __init__(self):
-        # Mongolian hyphenation
-        self.dic = pyphen.Pyphen(lang='mn_MN')
+        self.dic = pyphen.Pyphen(filename='hyph_mn_MN.dic')
 
     def hyphenate(self, word):
-        """Return cut positions (integers) where word can be hyphenated."""
-        inserted = self.dic.inserted(word)  # Inserts '-' where it can be broken
+        inserted = self.dic.inserted(word)
         cuts = [i for i, c in enumerate(inserted) if c == "-"]
         return cuts
 
-# -----------------------
-# ALIGNMENT FUNCTIONS
-# -----------------------
-def left_align(line, width):
-    return line
-
-def right_align(line, width):
-    return " " * (width - len(line)) + line
-
-def center_align(line, width):
-    pad = (width - len(line)) // 2
-    return " " * pad + line
 
 def justify_line(words, width):
     if len(words) == 1:
@@ -48,9 +31,6 @@ def justify_line(words, width):
 
     return line
 
-# -----------------------
-# GREEDY JUSTIFICATION
-# -----------------------
 def greedy_justify(text, width, hyph):
     words = text.split()
     result = []
@@ -71,24 +51,21 @@ def greedy_justify(text, width, hyph):
 
                 if current_len + len(left) + len(line_words) <= width:
                     line_words.append(left)
-                    result.append(" ".join(line_words))
+                    result.append(justify_line(line_words, width))
                     line_words = [right]
                     current_len = len(right)
                     placed = True
                     break
 
             if not placed:
-                result.append(" ".join(line_words))
+                result.append(justify_line(line_words, width))
                 line_words = [w]
                 current_len = len(w)
 
     if line_words:
-        result.append(" ".join(line_words))
+        result.append(justify_line(line_words, width))
     return result
 
-# -----------------------
-# DP JUSTIFICATION
-# -----------------------
 def dp_justify(text, width):
     words = text.split()
     n = len(words)
@@ -119,73 +96,41 @@ def dp_justify(text, width):
     i = 0
     while i < n:
         j = nxt[i]
-        lines.append(" ".join(words[i:j]))
+        lines.append(justify_line(words[i:j], width))
         i = j
 
     return lines
 
-# -----------------------
-# PERFORMANCE COMPARISON
-# -----------------------
-def compare_performance(text, width, hy):
-    print("\nГүйцэтгэлийн харьцуулалт:\n")
+def compare_and_print(text, width, hy):
+    print("\n== Гүйцэтгэлийн харьцуулалт ==")
 
     t1 = time.perf_counter()
     greedy_out = greedy_justify(text, width, hy)
     t2 = time.perf_counter()
+    greedy_ms = (t2 - t1) * 1000
 
     t3 = time.perf_counter()
     dp_out = dp_justify(text, width)
     t4 = time.perf_counter()
-
-    greedy_ms = (t2 - t1) * 1000
     dp_ms = (t4 - t3) * 1000
 
     print(f"Greedy: {greedy_ms:.4f} ms")
     print(f"DP: {dp_ms:.4f} ms")
 
-    return greedy_out, dp_out
+    print("\n== Greedy Justify ==")
+    for line in greedy_out:
+        print(line)
 
-# -----------------------
-# MAIN PROGRAM
-# -----------------------
+    print("\n== DP Justify ==")
+    for line in dp_out:
+        print(line)
+
 if __name__ == "__main__":
-    hy = SimpleHyphenator()
+    hy = Mongol1()
 
     print("Текстээ оруулна уу:")
     text = input("> ")
 
     width = int(input("Мөрийн өргөн: "))
 
-    print("\n== Байршил сонгоно уу ==")
-    print("1) Зүүн (Left)")
-    print("2) Төв (Center)")
-    print("3) Баруун (Right)")
-    print("4) Greedy Justify")
-    print("5) DP Justify")
-    print("6) Performance Compare (Greedy vs DP)")
-    mode = int(input("> "))
-
-    lines = greedy_justify(text, width, hy)
-    if mode == 5:
-        lines = dp_justify(text, width)
-    elif mode == 6:
-        greedy_out, dp_out = compare_performance(text, width, hy)
-        print("\n--- GREEDY JUSTIFIED ---")
-        for line in greedy_out:
-            print(justify_line(line.split(), width))
-        print("\n--- DP JUSTIFIED ---")
-        for line in dp_out:
-            print(justify_line(line.split(), width))
-        exit()
-
-    print("\n== Үр дүн ==")
-    for line in lines:
-        if mode == 1:
-            print(left_align(line, width))
-        elif mode == 2:
-            print(center_align(line, width))
-        elif mode == 3:
-            print(right_align(line, width))
-        else:
-            print(justify_line(line.split(), width))
+    compare_and_print(text, width, hy)

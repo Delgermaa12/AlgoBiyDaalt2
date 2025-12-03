@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d31caab9-0063-4a10-922e-23446b00bc0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AlgoBiyDaalt2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Greedy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hyph_mn.dic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hyph_mn_MN.dic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mn_MN.dic" afterDir="false" />
+    <list default="true" id="d31caab9-0063-4a10-922e-23446b00bc0e" name="Changes" comment="create hiilee">
+      <change afterPath="$PROJECT_DIR$/PythonMnUnitTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Greedy.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Delgermaa12"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Delgermaa12/AlgoBiyDaalt2.git",
+    "accountId": "3251c39a-52a8-411b-9e17-e6060d6224ee"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="36KUYwNXktV84BvwgvaneBJAkOU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,7 +47,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustify.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustify.test_greedy_vs_dp_short_width.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyAlgorithms.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyAlgorithms.test_greedy_vs_dp_large_width.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyAlgorithms.test_greedy_vs_dp_short_width.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyPerformance.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyPerformance.test_greedy_vs_dp_short_width.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyWithHyphenation.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyWithHyphenation.test_dp_line_length_and_words.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyWithHyphenation.test_greedy_line_length_and_hyphenation.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestJustifyWithHyphenation.test_greedy_vs_dp_words_match.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestTextJustifyAlgorithms.test_hyphenation_bugood.executor": "Run",
+    "Python tests.Python tests for PythonMnUnitTest.TestTextJustifyAlgorithms.test_long_word_split.executor": "Run",
+    "Python tests.Python tests in PythonMnUnitTest.py.executor": "Run",
     "Python.Greedy.executor": "Run",
+    "Python.PythonMn.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -55,6 +74,92 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\odelg\PycharmProjects\AlgoBiyDaalt2" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Python tests for PythonMnUnitTest.TestJustifyWithHyphenation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AlgoBiyDaalt2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PythonMnUnitTest.TestJustifyWithHyphenation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for PythonMnUnitTest.TestJustifyWithHyphenation.test_greedy_vs_dp_words_match" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AlgoBiyDaalt2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PythonMnUnitTest.TestJustifyWithHyphenation.test_greedy_vs_dp_words_match&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for PythonMnUnitTest.TestTextJustifyAlgorithms.test_hyphenation_bugood" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AlgoBiyDaalt2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PythonMnUnitTest.TestTextJustifyAlgorithms.test_hyphenation_bugood&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for PythonMnUnitTest.TestTextJustifyAlgorithms.test_long_word_split" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AlgoBiyDaalt2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;PythonMnUnitTest.TestTextJustifyAlgorithms.test_long_word_split&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in PythonMnUnitTest.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AlgoBiyDaalt2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/PythonMnUnitTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for PythonMnUnitTest.TestTextJustifyAlgorithms.test_hyphenation_bugood" />
+        <item itemvalue="Python tests.Python tests for PythonMnUnitTest.TestTextJustifyAlgorithms.test_long_word_split" />
+        <item itemvalue="Python tests.Python tests for PythonMnUnitTest.TestJustifyWithHyphenation" />
+        <item itemvalue="Python tests.Python tests in PythonMnUnitTest.py" />
+        <item itemvalue="Python tests.Python tests for PythonMnUnitTest.TestJustifyWithHyphenation.test_greedy_vs_dp_words_match" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -71,6 +176,19 @@
       <option name="presentableId" value="Default" />
       <updated>1764754808987</updated>
     </task>
+    <task id="LOCAL-00001" summary="create hiilee">
+      <option name="closed" value="true" />
+      <created>1764782931508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764782931508</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create hiilee" />
+    <option name="LAST_COMMIT_MESSAGE" value="create hiilee" />
   </component>
 </project>
